@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repaso Prueba 1</title>
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    
+    <h1 id="titulo">
+        Available developers
+    </h1>
+    <div id="bloque1" class="bloques">
+        <label>Nombre: </label>
+        <input type="text" name="nombre" placeholder="Developer name" id="txtNombre">
+        <label>URL Avatar: </label>
+        <input type="text" name="avatar" placeholder="Avatar URL" id="txtAvatar">
+        <label>Preséntate: </label>
+        <textarea name="aboutme" placeholder="Biography" id="txtBiograf"></textarea>
+        <p id="lenguaje">
+            <label>Lenguajes: </label>
+            <input type="checkbox" name="opcion" id="op1" class="radiocheck">
+            <label>HTML</label>
+            <input type="checkbox" name="opcion" id="op2" class="radiocheck">
+            <label>JS</label>
+            <input type="checkbox" name="opcion" id="op3" class="radiocheck">
+            <label>CSS</label>
+            <input type="checkbox" name="opcion" id="op4" class="radiocheck">
+            <label>Node </label>
+            <input type="checkbox" name="opcion" id="op5" class="radiocheck">
+            <label>MongoDB</label>
+        </p>
+        <div id="insertar">
+            <input type="submit" value="Insertar" id="btnInsertar" onclick= "verificarDeveloper(this)">
+        </div>
+    </div>
+    <div id="desarrolladores" class="bloques">
+        <script text="text/javascript" src="./js/script.js"></script>
+    </div>
 </body>
 </html>
